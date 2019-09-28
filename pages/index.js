@@ -1,18 +1,13 @@
 import Head from "next/head";
-import facebook from "../assets/icons/facebook.svg";
-import twitter from "../assets/icons/twitter.svg";
-import linkedin from "../assets/icons/linkedin.svg";
-import github from "../assets/icons/github.svg";
-import instagram from "../assets/icons/instagram.svg";
-import resume from "../assets/icons/resume.svg";
 import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default () => {
   return (
     <>
       <Head>
-        <title>Zuzka Jeschke - zuzjes.com</title>
+        <title>Zuzka Jeschke - zuzj.es</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
@@ -24,63 +19,47 @@ export default () => {
           <b>Zuzka Jeschke</b>
         </h1>
         <p>
-          Jsem velký nadšenec do hor, lezení a do{" "}
-          <a href="https://www.instagram.com/jsemnela/" target="_blank">Nely</a>.
+          osobni info na <a href="zuzjes.com">zuzjes.com</a> a <a href="https://zuzjes.com/static/resume-zuzana-jeschke.pdf">CV</a>
         </p>
         <p>
-          Věnuji se převážně <b>frontendu</b>, jednou chci být hustá programátorka.
-          Proto se teď snažím do sebe nasát co nejvíce znalostí a zkušeností.
-          Baví mě dělat věci efektivně a smysluplně. I když jsem trochu
-          introvert, práce v týmu je moje věc!
+          " Zuzka k nám na projekt nastoupila na pozici junior kodéra jako
+          externí výpomoc. Velmi rychle se dokázala naučit pracovat s naším
+          vlastním frontend frameworkem a nedělalo jí sebemenší problém
+          dodržovat námi nastavené best-practices pro psaní kódu. Především ale
+          oceňuji to, že s týmem aktivně komunikovala a vždy se nad úkoly
+          zamýšlela, proaktivně řešila zadanou práci a nezahazovala problémy pod
+          koberec, což je u juniorních vývojářů opravdu výjimečná vlastnost. I
+          přesto, že byla jediná holka v týmu, okamžitě se s ostatními vývojáři
+          jala hodnotit kvalitu dílenského zpracování a estetičnost
+          zaparkovaných vozidel před budovou. :) Díky za pomoc, Zuzko. "
         </p>
-        <p>HTML, Bootstrap, Sass, React, Next.js, Now, Git</p>
-        <p><a href="tel:+420608540464">+420 608 540 464</a> 
-         (<a href="https://t.me/zuzjes">Telegram</a>)<br/>
-        <a href="mailto:zuz@zuzjes.com">zuz@zuzjes.com</a></p>
-        <p className="crow">
-          <a
-            href="https://twitter.com/zuzjes"
-            className="padd-5"
-            target="_blank"
-          >
-            <img src={twitter} alt="Twitter" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/zuzjes/"
-            className="padd-5"
-            target="_blank"
-          >
-            <img src={linkedin} alt="Linkedin" />
-          </a>
-          <a
-            href="https://github.com/zuzjes"
-            className="padd-5"
-            target="_blank"
-          >
-            <img src={github} alt="Github" />
-          </a>
-          <a
-            href="https://www.instagram.com/zuzjes/"
-            className="padd-5"
-            target="_blank"
-          >
-            <img src={instagram} alt="Instagram" />
-          </a>
-          <a
-            href="https://www.facebook.com/zuzka.jeschke"
-            className="padd-5"
-            target="_blank"
-          >
-            <img src={facebook} alt="facebook" />
-          </a>
-          <a
-            href="../static/resume-zuzana-jeschke.pdf"
-            className="padd-5"
-            target="_blank"
-          >
-            <img src={resume} alt="CV-pdf" height="60" />
+        <p className="align-right">
+          <a href="https://www.linkedin.com/in/patrik-helta-9a06304b/">
+            Patrik Helta
           </a>
         </p>
+        <p>v soucatnosti na stazi v SatoshiLabs</p>(
+        <a href="https://t.me/zuzjes">Telegram</a>)<br />
+        <div className="row">
+          <div className="col-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            malesuada non magna at facilisis. Cras venenatis tempor fringilla.
+            In fermentum ultrices odio nec finibus. Proin a mi pellentesque,
+            sollicitudin ex id, rutrum felis.
+          </div>
+          <div className="col-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            malesuada non magna at facilisis. Cras venenatis tempor fringilla.
+            In fermentum ultrices odio nec finibus. Proin a mi pellentesque,
+            sollicitudin ex id, rutrum felis.
+          </div>
+          <div className="col-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            malesuada non magna at facilisis. Cras venenatis tempor fringilla.
+            In fermentum ultrices odio nec finibus. Proin a mi pellentesque,
+            sollicitudin ex id, rutrum felis.
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -103,7 +82,7 @@ export default () => {
           }
           p,
           a {
-            font-size: 30px;
+            font-size: 1.2rem;
           }
           a {
             color: #ff5296;
@@ -117,8 +96,7 @@ export default () => {
         `}
       </style>
       <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
-      <GoogleAnalytics google_analytics_site_id="UA-133283927-1"/>
+      <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
     </>
   );
 };
-
