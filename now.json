@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "zuzjes",
-  "alias": "zuzjes.com",
+  "name": "zuzj.es",
+  "alias": "zuzje.es",
   "builds": [
     {
       "src": "package.json",
