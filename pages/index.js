@@ -110,10 +110,10 @@ export default () => {
             padding-left: 1rem;
           }
           ::selection {
-            background: #88b9a5; /* WebKit/Blink Browsers */
+            background: #b5ebde; /* WebKit/Blink Browsers */
           }
           ::-moz-selection {
-            background: #88b9a5; /* Gecko Browsers */
+            background: #b5ebde; /* Gecko Browsers */
           }
         `}
       </style>
