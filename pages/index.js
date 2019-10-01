@@ -50,7 +50,7 @@ export default () => {
               <h3>GreenSwap</h3>
               <a href="https://github.com/zuzjes/greenswap">Github</a>
               <p>
-                Vedlejsi projekt na ktery namám skoro čas, usnadnit výměnu kytek bez zdlouhavého domlouvani.{" "}
+                Vedlejsi projekt, pro usnadnění výměny kytek, bez zdlouhavého domlouvani.{" "}
               </p>
             </div>
           </div>
