@@ -34,29 +34,23 @@ export default () => {
           <div className="row">
             <div className="col-4">
               <h3>OndrejSikaWebs</h3>
-              <a href="https://github.com/ondrejsika/ondrejsikawebs">Odkaz na repo</a>
+              <a href="https://github.com/ondrejsika/ondrejsikawebs">Github</a>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas malesuada non magna at facilisis. Cras venenatis tempor
-                fringilla. In fermentum ultrices odio nec finibus.{" "}
+                Monorepo s weby na Devops školeními, personalni stranku Ondřeje Siky.{" "}
               </p>
             </div>
             <div className="col-4">
               <h3>Trezor-suite</h3>
-              <a href="https://github.com/trezor/trezor-suite">Odkaz na repo</a>
+              <a href="https://github.com/trezor/trezor-suite">Github</a>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas malesuada non magna at facilisis. Cras venenatis tempor
-                fringilla. In fermentum ultrices odio nec finibus.{" "}
+                A suite for The Original Hardware Wallet.{" "}
               </p>
             </div>
             <div className="col-4">
               <h3>GreenSwap</h3>
-              <a href="https://github.com/zuzjes/greenswap">Odkaz na repo</a>
+              <a href="https://github.com/zuzjes/greenswap">Github</a>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas malesuada non magna at facilisis. Cras venenatis tempor
-                fringilla. In fermentum ultrices odio nec finibus.{" "}
+                Vedlejsi projekt na ktery namám skoro čas, usnadnit výměnu kytek bez zdlouhavého domlouvani.{" "}
               </p>
             </div>
           </div>
