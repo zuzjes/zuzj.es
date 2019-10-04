@@ -26,7 +26,7 @@ export default () => {
             <a href="https://zuzjes.com/static/resume-zuzana-jeschke.pdf">CV</a>
           </p>
           <p>
-            v soucatnosti na stazi v{" "}
+            v soucatnosti v{" "}
             <a href="https://trezor.io/">SatoshiLabs</a>
           </p>
         </div>
