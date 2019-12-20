@@ -30,6 +30,7 @@ export default () => {
             <a href="https://trezor.io/">SatoshiLabs</a>
           </p>
         </div>
+        <a href="/myFlowers">Flowers</a>
         <div className="section">
           <div className="row">
             <div className="col-4">
