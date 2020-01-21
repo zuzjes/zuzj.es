@@ -8,7 +8,7 @@ const myFlowers = () => {
         <h1>My flowers</h1>
         <h3 className="pt-3 pb-3">HOYAS</h3>
         <div className="row">
-          <div class="col-md-4">
+          {/* <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h4>Hoya Camphorifolia</h4>
@@ -18,8 +18,8 @@ const myFlowers = () => {
                 src={require("../assets/flowers/hoya-camphorifolia.png")}
               />
             </div>
-          </div>
-          <div class="col-md-4">
+          </div> */}
+          {/* <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h4>Hoya Carnosa Kringle</h4>
@@ -29,7 +29,7 @@ const myFlowers = () => {
                 src={require("../assets/flowers/hoya-carnosa-kringle.png")}
               />
             </div>
-          </div>
+          </div> */}
           <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
@@ -52,7 +52,7 @@ const myFlowers = () => {
               />
             </div>
           </div>
-          <div class="col-md-4">
+          {/* <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h4>Hoya Compacta</h4>
@@ -62,7 +62,7 @@ const myFlowers = () => {
                 src={require("../assets/flowers/hoya-compacta.png")}
               />
             </div>
-          </div>
+          </div> */}
           <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
@@ -107,7 +107,7 @@ const myFlowers = () => {
               />
             </div>
           </div>
-          <div class="col-md-4">
+          {/* <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h4>Hoya Lamingtonie</h4>
@@ -117,7 +117,7 @@ const myFlowers = () => {
                 src={require("../assets/flowers/hoya-lamingtonie.png")}
               />
             </div>
-          </div>
+          </div> */}
           <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
@@ -140,7 +140,7 @@ const myFlowers = () => {
               />
             </div>
           </div>
-          <div class="col-md-4">
+          {/* <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h4>Hoya Magnifica</h4>
@@ -150,7 +150,7 @@ const myFlowers = () => {
                 src={require("../assets/flowers/hoya-magnifica.png")}
               />
             </div>
-          </div>
+          </div> */}
           <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
@@ -250,6 +250,39 @@ const myFlowers = () => {
               <img
                 class="img img-fluid"
                 src={require("../assets/flowers/monstera-variegata.png")}
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4>Philodendron Xanadu</h4>
+              </div>
+              <img
+                class="img img-fluid"
+                src={require("../assets/flowers/philodendron-xanadu.png")}
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4>Philodendron Elegans</h4>
+              </div>
+              <img
+                class="img img-fluid"
+                src={require("../assets/flowers/philodendron-elegans.png")}
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4>Philodendron Santa Leopoldina</h4>
+              </div>
+              <img
+                class="img img-fluid"
+                src={require("../assets/flowers/philodendron-santa-leopoldina.png")}
               />
             </div>
           </div>
