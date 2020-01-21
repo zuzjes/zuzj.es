@@ -15,16 +15,27 @@ export default () => {
         />
       </Head>
       <div className="w-45 container">
-        <MainHeader>Zuzka Jeschke</MainHeader>
         <div className="section">
-          <a href="https://t.me/zuzjes">Telegram</a>
-          <br />
-          <a href="/references" className="buttonLike">
-            Reference
+          <a href="https://www.linkedin.com/in/patrik-helta-9a06304b/">
+            <h3>Patrik Helta</h3>
           </a>
+          <p className="quote">
+            Zuzka k nám na projekt nastoupila na pozici junior kodéra jako
+            externí výpomoc. Velmi rychle se dokázala naučit pracovat s naším
+            vlastním frontend frameworkem a nedělalo jí sebemenší problém
+            dodržovat námi nastavené best-practices pro psaní kódu. Především
+            ale oceňuji to, že s týmem aktivně komunikovala a vždy se nad úkoly
+            zamýšlela, proaktivně řešila zadanou práci a nezahazovala problémy
+            pod koberec, což je u juniorních vývojářů opravdu výjimečná
+            vlastnost. I přesto, že byla jediná holka v týmu, okamžitě se s
+            ostatními vývojáři jala hodnotit kvalitu dílenského zpracování a
+            estetičnost zaparkovaných vozidel před budovou. :) Díky za pomoc,
+            Zuzko.
+          </p>
+          <p className="text-right pb-4">
+          </p>
         </div>
       </div>
-
       <style jsx>
         {`
           .section {
@@ -52,11 +63,7 @@ export default () => {
             font-size: 1.2rem;
           }
           a {
-            color: grey;
-          }
-          .buttonLike {
-            border: 1px pink solid;
-            padding: ;
+            color: #ff5296;
           }
           .quote {
             border-left: solid 2px grey;
@@ -70,8 +77,6 @@ export default () => {
           }
         `}
       </style>
-      <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
-      <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
     </>
   );
 };
