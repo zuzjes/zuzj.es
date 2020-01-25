@@ -1,7 +1,38 @@
 import Head from "next/head";
 import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+const MainHeader = styled.h1`
+  font-size: 3em;
+`;
+
+const LayoutWrapper = styled.div`
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Cutive Mono", monospace;
+  max-width: 800px;
+  max-width: 45%;
+`;
+const A = styled.a`
+  color: pink;
+  &:hover {
+    font-weight: bold;
+    text-decoration: none;
+  }
+`;
+const ButtonLike = styled.span`
+  border: 1px solid pink;
+  border-radius: 3px;
+  padding: 0.2em 0.3em;
+  &:hover {
+    color: white;
+    font-weight: bold;
+    background-color: pink;
+  }
+`;
 
 export default () => {
   return (
@@ -14,28 +45,19 @@ export default () => {
           rel="stylesheet"
         />
       </Head>
-      <div className="w-45 container">
+      <LayoutWrapper>
         <MainHeader>Zuzka Jeschke</MainHeader>
-        <div className="section">
-          <a href="https://t.me/zuzjes">Telegram</a>
-          <br />
-          <a href="/references" className="buttonLike">
+        <A href="https://t.me/zuzjes">Telegram</A>
+        <br />
+        <ButtonLike>
+          <A href="/references" className="buttonLike">
             Reference
-          </a>
-        </div>
-      </div>
+          </A>
+        </ButtonLike>
+      </LayoutWrapper>
 
       <style jsx>
         {`
-          .section {
-            padding-top: 1.5rem;
-          }
-          .w-45 {
-            max-width: 45%;
-          }
-          .padd-5 {
-            padding: 5px;
-          }
           .container {
             padding-right: 15px;
             padding-left: 15px;

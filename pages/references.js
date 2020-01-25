@@ -3,40 +3,31 @@ import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default () => {
-  return (
-    <>
-      <Head>
-        <title>Zuzka Jeschke - zuzj.es</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <div className="w-45 container">
-        <div className="section">
-          <a href="https://www.linkedin.com/in/patrik-helta-9a06304b/">
-            <h3>Patrik Helta</h3>
-          </a>
-          <p className="quote">
-            Zuzka k nám na projekt nastoupila na pozici junior kodéra jako
-            externí výpomoc. Velmi rychle se dokázala naučit pracovat s naším
-            vlastním frontend frameworkem a nedělalo jí sebemenší problém
-            dodržovat námi nastavené best-practices pro psaní kódu. Především
-            ale oceňuji to, že s týmem aktivně komunikovala a vždy se nad úkoly
-            zamýšlela, proaktivně řešila zadanou práci a nezahazovala problémy
-            pod koberec, což je u juniorních vývojářů opravdu výjimečná
-            vlastnost. I přesto, že byla jediná holka v týmu, okamžitě se s
-            ostatními vývojáři jala hodnotit kvalitu dílenského zpracování a
-            estetičnost zaparkovaných vozidel před budovou. :) Díky za pomoc,
-            Zuzko.
-          </p>
-          <p className="text-right pb-4">
-          </p>
-        </div>
-      </div>
-      <style jsx>
+import styled from "styled-components";
+
+const LayoutWrapper = styled.div`
+  max-width: 45%;
+`;
+export const References = () => (
+  <>
+    <LayoutWrapper>
+      <a href="https://www.linkedin.com/in/patrik-helta-9a06304b/">
+        <h3>Patrik Helta</h3>
+      </a>
+      <Quote>
+        Zuzka k nám na projekt nastoupila na pozici junior kodéra jako externí
+        výpomoc. Velmi rychle se dokázala naučit pracovat s naším vlastním
+        frontend frameworkem a nedělalo jí sebemenší problém dodržovat námi
+        nastavené best-practices pro psaní kódu. Především ale oceňuji to, že s
+        týmem aktivně komunikovala a vždy se nad úkoly zamýšlela, proaktivně
+        řešila zadanou práci a nezahazovala problémy pod koberec, což je u
+        juniorních vývojářů opravdu výjimečná vlastnost. I přesto, že byla
+        jediná holka v týmu, okamžitě se s ostatními vývojáři jala hodnotit
+        kvalitu dílenského zpracování a estetičnost zaparkovaných vozidel před
+        budovou. :) Díky za pomoc, Zuzko.
+      </Quote>
+    </LayoutWrapper>
+    {/* <style jsx>
         {`
           .section {
             padding-top: 1.5rem;
@@ -69,14 +60,7 @@ export default () => {
             border-left: solid 2px grey;
             padding-left: 1rem;
           }
-          ::selection {
-            background: #b5ebde; /* WebKit/Blink Browsers */
-          }
-          ::-moz-selection {
-            background: #b5ebde; /* Gecko Browsers */
-          }
-        `}
-      </style>
-    </>
-  );
-};
+
+      </style> */}
+  </>
+);
