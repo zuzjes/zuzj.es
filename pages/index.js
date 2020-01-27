@@ -4,34 +4,12 @@ import GoogleAnalytics from "../components/GoogleAnalytics";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import { LayoutWrapper } from "../components/LayoutWrapper";
+import { A } from "../components/A";
+import { Button } from "../components/Button";
+
 const MainHeader = styled.h1`
   font-size: 3em;
-`;
-
-const LayoutWrapper = styled.div`
-  padding: 1em;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: "Cutive Mono", monospace;
-  max-width: 800px;
-  max-width: 45%;
-`;
-const A = styled.a`
-  color: pink;
-  &:hover {
-    font-weight: bold;
-    text-decoration: none;
-  }
-`;
-const ButtonLike = styled.span`
-  border: 1px solid pink;
-  border-radius: 3px;
-  padding: 0.2em 0.3em;
-  &:hover {
-    color: white;
-    font-weight: bold;
-    background-color: pink;
-  }
 `;
 
 export default () => {
@@ -47,13 +25,15 @@ export default () => {
       </Head>
       <LayoutWrapper>
         <MainHeader>Zuzka Jeschke</MainHeader>
-        <A href="https://t.me/zuzjes">Telegram</A>
-        <br />
-        <ButtonLike>
-          <A href="/references" className="buttonLike">
-            Reference
-          </A>
-        </ButtonLike>
+        <A href="https://t.me/zuzjes">Telegram</A>-
+        <A href="https://www.linkedin.com/in/zuzjes/">Linkedin</A>-
+        <A href="https://www.facebook.com/zuzka.jeschke">Facebook</A>-
+        <A href="https://twitter.com/zuzjes">Twitter</A>-
+        <A href="https://www.instagram.com/zuzjes/">Instagram</A>
+        <Button href="/references">Reference</Button>
+        <Button href="https://www.instagram.com/zuz_kytky/">
+          Moje rostlinná sbírka
+        </Button>
       </LayoutWrapper>
       <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
       <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
