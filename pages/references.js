@@ -38,7 +38,7 @@ const References = () => (
 
             <Reccomendation
                 name="Ondrej Sika"
-                link="www.ondrej-sika.cz"
+                link="https://ondrej-sika.cz"
                 text="Zuzanka je dokonala"
             />
         </LayoutWrapper>
