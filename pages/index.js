@@ -10,41 +10,47 @@ import { Button } from "../components/Button";
 
 const svg = require("../components/svg/something.svg");
 const MainHeader = styled.h1`
-  font-size: 3em;
+    font-size: 3em;
 `;
 const Wrapper = styled.div`
-  background: grey;
-  padding-bottom: 1000px;
+    background: grey;
+    padding-bottom: 1000px;
 `;
 
 export default () => {
-  return (
-    <>
-      <Head>
-        <title>Zuzka Jeschke - zuzj.es</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <Wrapper>
-        {/* <LayoutWrapper> */}
-          <img src={svg}></img>
-          {/* <MainHeader>Zuzka Jeschke</MainHeader>
-        <A href="https://t.me/zuzjes">Telegram</A>-
-        <A href="https://www.linkedin.com/in/zuzjes/">Linkedin</A>-
-        <A href="https://www.facebook.com/zuzka.jeschke">Facebook</A>-
-        <A href="https://twitter.com/zuzjes">Twitter</A>-
-        <A href="https://www.instagram.com/zuzjes/">Instagram</A>
-        <Button href="/references">Reference</Button>
-        <Button href="https://www.instagram.com/zuz_kytky/">
-          Moje rostlinná sbírka
-        </Button> */}
-        {/* </LayoutWrapper> */}
-      </Wrapper>
-      <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
-      <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
-    </>
-  );
+    return (
+        <>
+            <Head>
+                <title>Zuzka Jeschke - zuzj.es</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
+                    rel="stylesheet"
+                />
+            </Head>
+            <Wrapper>
+                <LayoutWrapper>
+                    <MainHeader>Zuzka Jeschke</MainHeader>
+                    <A href="https://t.me/zuzjes">Telegram - </A>
+                    <A href="https://www.linkedin.com/in/zuzjes/">
+                        Linkedin -{" "}
+                    </A>
+                    <A href="https://www.facebook.com/zuzka.jeschke">
+                        Facebook -{" "}
+                    </A>
+                    <A href="https://twitter.com/zuzjes">Twitter - </A>
+                    <A href="https://www.instagram.com/zuzjes/">Instagram</A>
+                    <Button href="/references">Reference</Button>
+                    <Button href="https://www.instagram.com/zuz_kytky/">
+                        Moje rostlinná sbírka
+                    </Button>
+                </LayoutWrapper>
+            </Wrapper>
+            <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
+            <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
+        </>
+    );
 };
