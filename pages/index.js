@@ -8,15 +8,30 @@ import { LayoutWrapper } from "../components/LayoutWrapper";
 import { A } from "../components/A";
 import { Button } from "../components/Button";
 
-const svg = require("../components/svg/something.svg");
 const MainHeader = styled.h1`
     font-size: 3em;
+    color: floralwhite;
 `;
 const Wrapper = styled.div`
-    background: grey;
+    background: #4e4e4e;
     padding-bottom: 1000px;
+    color: #ccd9bf;
 `;
 
+const SocialNetworkLink = styled.a`
+    color: #fffaf0;
+    &:hover {
+        font-weight: bold;
+        text-decoration: none;
+        color: #ccd9bf;
+    }
+    ::after {
+        content: " - ";
+    }
+    :last-child:after {
+        content: " ";
+    }
+`;
 export default () => {
     return (
         <>
@@ -34,19 +49,29 @@ export default () => {
             <Wrapper>
                 <LayoutWrapper>
                     <MainHeader>Zuzka Jeschke</MainHeader>
-                    <A href="https://t.me/zuzjes">Telegram - </A>
-                    <A href="https://www.linkedin.com/in/zuzjes/">
-                        Linkedin -{" "}
-                    </A>
-                    <A href="https://www.facebook.com/zuzka.jeschke">
-                        Facebook -{" "}
-                    </A>
-                    <A href="https://twitter.com/zuzjes">Twitter - </A>
-                    <A href="https://www.instagram.com/zuzjes/">Instagram</A>
+
+                    <SocialNetworkLink href="https://t.me/zuzjes">
+                        Telegram
+                    </SocialNetworkLink>
+                    <SocialNetworkLink href="https://www.linkedin.com/in/zuzjes/">
+                        Linkedin
+                    </SocialNetworkLink>
+                    <SocialNetworkLink href="https://www.facebook.com/zuzka.jeschke">
+                        Facebook
+                    </SocialNetworkLink>
+                    <SocialNetworkLink href="https://twitter.com/zuzjes">
+                        Twitter
+                    </SocialNetworkLink>
+                    <SocialNetworkLink href="https://www.instagram.com/zuzjes/">
+                        Instagram
+                    </SocialNetworkLink>
+
                     <Button href="/references">Reference</Button>
                     <Button href="https://www.instagram.com/zuz_kytky/">
                         Moje rostlinná sbírka
                     </Button>
+                    <Button href="https://zuzjes.com/static/resume-zuzana-jeschke.pdf">CV</Button>
+                    <Button href="/facturation">Fakturační údaje</Button>
                 </LayoutWrapper>
             </Wrapper>
             <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />

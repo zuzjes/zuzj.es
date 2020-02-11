@@ -9,7 +9,7 @@ const ButtonWrapper = styled.div`
 
     &:hover {
         font-weight: bold;
-        background-color: pink;
+        background-color: #ccd9bf;
     }
 `;
 const Inner = styled.a`

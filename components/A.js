@@ -5,5 +5,6 @@ export const A = styled.a`
     &:hover {
         font-weight: bold;
         text-decoration: none;
+        color: #ccd9bf;
     }
 `;

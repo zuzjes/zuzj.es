@@ -5,20 +5,29 @@ import Router from "next/router";
 import styled from "styled-components";
 
 const Back = styled.div`
-    color: grey;
+    color: floralwhite;
     cursor: pointer;
-    border: 2px solid grey;
     border-radius: 5px;
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0.5em 2em 0.5em 0em;
     text-align: center;
     width: max-content;
+    margin-bottom: 2em;
     &:before {
-        content: "❮";
+        content: "❮ ";
         padding-right: 4px;
     }
+    &:hover{
+        color: #B3B3B3;
+    }
 `;
+
+const Wrapper = styled.div`
+    background: grey;
+    padding-bottom: 1000px;
+`;
+
 const References = () => (
-    <>
+    <Wrapper>
         <LayoutWrapper>
             <Back onClick={() => Router.back()}>Back</Back>
             <Reccomendation
@@ -42,7 +51,7 @@ const References = () => (
                 text="Zuzanka je dokonala"
             />
         </LayoutWrapper>
-    </>
+    </Wrapper>
 );
 
 export default References;
