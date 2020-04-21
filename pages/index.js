@@ -1,125 +1,85 @@
-import Head from "next/head";
-import Gauges from "../components/Gauges";
-import GoogleAnalytics from "../components/GoogleAnalytics";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Head from 'next/head'
+import Gauges from '../components/Gauges'
+import GoogleAnalytics from '../components/GoogleAnalytics'
+import styled, { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-size: 1.5em;
+  }
+`
+const Container = styled.div`
+  padding: 2.5em 2em;
+  font-family: 'IBM Plex Sans', sans-serif;
+  max-width: 800px;
+  @media (max-width: 600px) {
+    padding: 0 1em;
+  }
+`
+const Header = styled.h1`
+  font-size: 2.8em;
+  margin-block-end: 0.2em;
+  margin-block-start: 0em;
+
+`
+const A = styled.a`
+  color: #088958;
+`
+const Name = styled.a`
+  color: #088958;
+`
+const Reference = styled.p`
+  margin: 2em 0 0.5em 0;
+`
 
 export default () => {
   return (
     <>
+      <GlobalStyle />
       <Head>
-        <title>Zuzka Jeschke - zuzj.es</title>
+        <title>Zuzka Jeschke - zuzjes.com</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
-          href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
           rel="stylesheet"
         />
       </Head>
-      <div className="w-45 container">
-        <h1>
-          <b>Zuzka Jeschke</b>
-        </h1>
-        <div className="section">
-          <a href="https://t.me/zuzjes">Telegram</a> -{" "}
-          <a href="">zuz@zuzjes.com</a> - <a href="">608 540 464</a>
-          <p>
-            osobni info na <a href="zuzjes.com">zuzjes.com</a> a{" "}
-            <a href="https://zuzjes.com/static/resume-zuzana-jeschke.pdf">CV</a>
-          </p>
-          <p>
-            v soucatnosti v{" "}
-            <a href="https://trezor.io/">SatoshiLabs</a>
-          </p>
-        </div>
-        <a href="/myFlowers">Flowers</a>
-        <div className="section">
-          <div className="row">
-            <div className="col-4">
-              <h3>OndrejSikaWebs</h3>
-              <a href="https://github.com/ondrejsika/ondrejsikawebs">Github</a>
-              <p>
-                Monorepo s weby na Devops školeními, personalni stranku Ondřeje Siky.{" "}
-              </p>
-            </div>
-            <div className="col-4">
-              <h3>Trezor-suite</h3>
-              <a href="https://github.com/trezor/trezor-suite">Github</a>
-              <p>
-                A suite for The Original Hardware Wallet.{" "}
-              </p>
-            </div>
-            <div className="col-4">
-              <h3>GreenSwap</h3>
-              <a href="https://github.com/zuzjes/greenswap">Github</a>
-              <p>
-                Vedlejsi projekt, pro usnadnění výměny kytek, bez zdlouhavého domlouvani.{" "}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="section">
-          <p className="quote">
-            Zuzka k nám na projekt nastoupila na pozici junior kodéra jako
-            externí výpomoc. Velmi rychle se dokázala naučit pracovat s naším
-            vlastním frontend frameworkem a nedělalo jí sebemenší problém
-            dodržovat námi nastavené best-practices pro psaní kódu. Především
-            ale oceňuji to, že s týmem aktivně komunikovala a vždy se nad úkoly
-            zamýšlela, proaktivně řešila zadanou práci a nezahazovala problémy
-            pod koberec, což je u juniorních vývojářů opravdu výjimečná
-            vlastnost. I přesto, že byla jediná holka v týmu, okamžitě se s
-            ostatními vývojáři jala hodnotit kvalitu dílenského zpracování a
-            estetičnost zaparkovaných vozidel před budovou. :) Díky za pomoc,
-            Zuzko.
-          </p>
-          <p className="text-right pb-4">
-            <a href="https://www.linkedin.com/in/patrik-helta-9a06304b/">
-              --Patrik Helta
-            </a>
-          </p>
-        </div>
-      </div>
-      <style jsx>
-        {`
-          .section {
-            padding-top: 1.5rem;
-          }
-          .w-45 {
-            max-width: 45%;
-          }
-          .padd-5 {
-            padding: 5px;
-          }
-          .container {
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-            font-family: "Cutive Mono", monospace;
-            max-width: 800px;
-          }
-          h1 {
-            font-size: 3em;
-          }
-          p,
-          a {
-            font-size: 1.2rem;
-          }
-          a {
-            color: #ff5296;
-          }
-          .quote {
-            border-left: solid 2px grey;
-            padding-left: 1rem;
-          }
-          ::selection {
-            background: #b5ebde; /* WebKit/Blink Browsers */
-          }
-          ::-moz-selection {
-            background: #b5ebde; /* Gecko Browsers */
-          }
-        `}
-      </style>
+      <Container>
+        <Name>Zuzka Jeschke</Name>
+        <Header>Reference</Header>
+        <Reference>
+          Zuzka k nám na projekt nastoupila na pozici junior kodéra jako externí
+          výpomoc. Velmi rychle se dokázala naučit pracovat s naším vlastním
+          frontend frameworkem a nedělalo jí sebemenší problém dodržovat námi
+          nastavené best-practices pro psaní kódu. Především ale oceňuji to, že
+          s týmem aktivně komunikovala a vždy se nad úkoly zamýšlela, proaktivně
+          řešila zadanou práci a nezahazovala problémy pod koberec, což je u
+          juniorních vývojářů opravdu výjimečná vlastnost. I přesto, že byla
+          jediná holka v týmu, okamžitě se s ostatními vývojáři jala hodnotit
+          kvalitu dílenského zpracování a estetičnost zaparkovaných vozidel před
+          budovou. Díky za pomoc, Zuzko.
+        </Reference>
+        <Name>
+          {' '}
+          -{' '}
+          <A href="https://www.linkedin.com/in/patrik-helta-9a06304b/">
+            Patrik Helta
+          </A>
+        </Name>
+
+        <Reference>
+          Zuzka is easy going, good spirited, dedicatied person. Working with
+          her was really good experience and I´m really sorry for seeing her go.
+          Best of luck in your next endeavours!
+        </Reference>
+        <Name>
+          {' '}
+          -{' '}
+          <A href="https://www.linkedin.com/in/zdenek-slezak/">Zdeněk Slezák</A>
+        </Name>
+      </Container>
       <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
       <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
     </>
-  );
-};
+  )
+}

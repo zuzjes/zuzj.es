@@ -9,14 +9,17 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.3.1",
     "next": "^9.0.3",
     "next-images": "^1.2.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "dev": "next",
+    "clean": "git clean -X -f -d",
     "build": "next build",
     "static": "yarn run build && next export",
     "prettier-check": "prettier -l \"**/*.js\"",
