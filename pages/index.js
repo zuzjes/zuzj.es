@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 const Container = styled.div`
-  padding: 2.5em 2em;
+  padding: 0 2em;
   font-family: 'IBM Plex Sans', sans-serif;
   max-width: 800px;
   @media (max-width: 600px) {
@@ -19,20 +19,34 @@ const Container = styled.div`
 const Header = styled.h1`
   font-size: 2.8em;
   margin-block-end: 0.2em;
-  margin-block-start: 0em;
-
 `
 const A = styled.a`
   color: #088958;
 `
-const Name = styled.a`
+const Button = styled.a`
+  border: 1px solid #088958;
+  padding: 0.15em 0.4em;
+  margin: 0.3em 0;
   color: #088958;
-`
-const Reference = styled.p`
-  margin: 2em 0 0.5em 0;
+  text-decoration: none;
+  display: block;
+  max-width: 300px;
+  &:hover {
+    border: 1px solid #088958;
+    padding: 0.15em 0.4em;
+    background-color: #088958;
+    color: white;
+  }
 `
 
 export default () => {
+  const copyToClipboard = element => {
+    let $temp = $('<input>')
+    $('body').append($temp)
+    $temp.val($(element).text()).select()
+    document.execCommand('copy')
+    $temp.remove()
+  }
   return (
     <>
       <GlobalStyle />
@@ -45,38 +59,30 @@ export default () => {
         />
       </Head>
       <Container>
-        <Name>Zuzka Jeschke</Name>
-        <Header>Reference</Header>
-        <Reference>
-          Zuzka k nám na projekt nastoupila na pozici junior kodéra jako externí
-          výpomoc. Velmi rychle se dokázala naučit pracovat s naším vlastním
-          frontend frameworkem a nedělalo jí sebemenší problém dodržovat námi
-          nastavené best-practices pro psaní kódu. Především ale oceňuji to, že
-          s týmem aktivně komunikovala a vždy se nad úkoly zamýšlela, proaktivně
-          řešila zadanou práci a nezahazovala problémy pod koberec, což je u
-          juniorních vývojářů opravdu výjimečná vlastnost. I přesto, že byla
-          jediná holka v týmu, okamžitě se s ostatními vývojáři jala hodnotit
-          kvalitu dílenského zpracování a estetičnost zaparkovaných vozidel před
-          budovou. Díky za pomoc, Zuzko.
-        </Reference>
-        <Name>
-          {' '}
-          -{' '}
-          <A href="https://www.linkedin.com/in/patrik-helta-9a06304b/">
-            Patrik Helta
+        <Header>Zuzka Jeschke</Header>
+        <Button href="https://www.linkedin.com/in/zuzjes/">Linkedin</Button>
+        <Button href="https://github.com/zuzjes">Github</Button>
+        <Button href="/references">Reference</Button>
+        <Button href="https://t.me/zuzjes">Telegram</Button>
+        <Button href="mailto:zuz@zuzjes.com">zuz@zuzjes.com</Button>
+        <Button href="tel:+420608540464">+420 608 540 464</Button>
+        <Button href="https://www.facebook.com/zuzka.jeschke">Facebook</Button>
+        <Button href="https://twitter.com/zuzjes">Twitter</Button>
+        <Button href="https://www.instagram.com/zuzjes/">Instagram</Button>
+        <Button href="https://www.instagram.com/zuz_kytky/">
+          Instagram zuz_kytky
+        </Button>
+        <Button href="https://www.instagram.com/jsemnela/">
+          Instagram jsemnela
+        </Button>
+        <p>
+          Číslo účtu: 2501498897 / 2010 (Fio)
+          <br />
+          Revolut:{' '}
+          <A href="https://pay.revolut.com/profile/zuzanakf6">
+            +420 608 540 464
           </A>
-        </Name>
-
-        <Reference>
-          Zuzka is easy going, good spirited, dedicatied person. Working with
-          her was really good experience and I´m really sorry for seeing her go.
-          Best of luck in your next endeavours!
-        </Reference>
-        <Name>
-          {' '}
-          -{' '}
-          <A href="https://www.linkedin.com/in/zdenek-slezak/">Zdeněk Slezák</A>
-        </Name>
+        </p>
       </Container>
       <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
       <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
