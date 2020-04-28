@@ -2,13 +2,14 @@ module.exports = {
   exportTrailingSlash: true,
   exportPathMap: async function(defaultPathMap) {
     return {
-      '/': { page: '/' }
+      "/": { page: "/" },
+      "/reference": { page: "/reference" }
     };
   }
 };
 
-const withImages = require('next-images')
-module.exports = withImages(module.exports)
+const withImages = require("next-images");
+module.exports = withImages(module.exports);
 
 const withCSS = require("@zeit/next-css");
 module.exports = withCSS(module.exports);
