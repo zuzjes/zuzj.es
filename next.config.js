@@ -1,11 +1,5 @@
 module.exports = {
-  exportTrailingSlash: true,
-  exportPathMap: async function(defaultPathMap) {
-    return {
-      "/": { page: "/" },
-      "/reference": { page: "/reference" }
-    };
-  }
+  exportTrailingSlash: true
 };
 
 const withImages = require("next-images");
