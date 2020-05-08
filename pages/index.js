@@ -54,6 +54,10 @@ export default () => (
     <Container>
       <Header>Zuzka Jeschke</Header>
       <Button href="https://zuzjes.com">zuzjes.com</Button>
+      <Button href="/references" target={null}>
+        Reference
+      </Button>
+
       <br />
       <Button href="https://www.linkedin.com/in/zuzjes/">Linkedin</Button>
       <Button href="https://github.com/zuzjes">Github</Button>
