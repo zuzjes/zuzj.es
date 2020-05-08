@@ -24,9 +24,10 @@ const Header = styled.h1`
   margin-block-start: 0em;
 `;
 
-const Back = styled.div`
+const Back = styled.a`
   color: #088958;
   cursor: pointer;
+  text-decoration: none;
   :hover {
     color: #044d30;
   }
@@ -45,7 +46,7 @@ export default () => (
     </Head>
     <Container>
       <Header>Reference</Header>
-      <Back onClick={() => Router.back()}>&#8249; Back</Back>
+      <Back href="/">&#8249; Back</Back>
       <Reference
         text="Zuzka k nám na projekt nastoupila na pozici junior kodéra jako externí
           výpomoc. Velmi rychle se dokázala naučit pracovat s naším vlastním
