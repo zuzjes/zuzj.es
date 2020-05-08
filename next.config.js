@@ -3,7 +3,7 @@ module.exports = {
   exportPathMap: async function(defaultPathMap) {
     return {
       "/": { page: "/" },
-      "/reference": { page: "/reference" }
+      "/reference": { page: "/references" }
     };
   }
 };
