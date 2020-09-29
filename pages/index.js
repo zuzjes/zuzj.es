@@ -23,14 +23,14 @@ const Header = styled.h1`
 //   color: #088958;
 // `;
 const Button = styled.a`
-  border: 1px solid #088958;
+  border: 2px solid #088958;
   padding: 0.15em 0.4em;
   margin: 0.3em 0.6em 0.3em 0;
   color: #088958;
   text-decoration: none;
   display: inline-block;
   &:hover {
-    border: 1px solid #088958;
+    border: 2px solid #088958;
     padding: 0.15em 0.4em;
     background-color: #088958;
     color: white;
