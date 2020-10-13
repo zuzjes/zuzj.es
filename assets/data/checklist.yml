@@ -1,0 +1,14 @@
+- id: hory-vikend
+  name: Hory vikend
+  checklist: |
+    - tricko
+    - kalhoty
+    - tricko
+
+- id: hory-zima
+  name: Hory zima (7dni)
+  checklist: |
+    - lyze
+    - tricko
+    - kalhoty
+    - tricko

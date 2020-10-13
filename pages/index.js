@@ -72,7 +72,7 @@ export default () => (
       <Button href="tel:+420608540464">+420 608 540 464</Button>
       <Button href="https://t.me/zuzjes">Telegram</Button>
       <br />
-      
+
       <Button href="https://pay.revolut.com/profile/zuzanakf6">
         Revolut @zuzjes
       </Button>
@@ -89,6 +89,11 @@ export default () => (
 
       <Button href="https://docs.google.com/spreadsheets/d/1-RZQFcAcSRtYMhykHKtL_Fwmo7e2a3_aYng0cQLThxU/edit#gid=0">
         Darky pro me
+      </Button>
+      <br />
+
+      <Button href="/checklistsPage" target={null}>
+        Checklisty
       </Button>
 
       <p>

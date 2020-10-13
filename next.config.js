@@ -10,3 +10,6 @@ module.exports = withCSS(module.exports);
 
 const withSass = require("@zeit/next-sass");
 module.exports = withSass(module.exports);
+
+const withYAML = require("next-yaml");
+module.exports = withYAML(module.exports);
