@@ -51,18 +51,20 @@ const ChecklistsPage = props => {
       <Container>
         <Header>Checklisty</Header>
         <Back href="/">&#8249; Back</Back>
-        <a onClick={onClick}>
-          <h2>Vikend na horach</h2>
-        </a>
-        {open ? (
-          <div>
-            {checkbox_yml.map((item, i) => (
-              <Checkbox item={item.checklist} key={i} />
-            ))}
+        {checkbox_yml.map((item, i) => (
+          <div key={i}>
+            <a onClick={onClick} >
+              <h2>{item.name}</h2>
+            </a>
+            {open ? (
+              <div>
+                <Checkbox item={item.checklist}  />
+              </div>
+            ) : (
+              <p>zavreno</p>
+            )}
           </div>
-        ) : (
-          <p>zavreno</p>
-        )}
+        ))}
       </Container>
       <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
       <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
