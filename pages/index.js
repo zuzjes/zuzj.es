@@ -2,6 +2,7 @@ import Head from "next/head";
 import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import styled, { createGlobalStyle } from "styled-components";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -97,8 +98,8 @@ export default () => (
         Checklisty
       </Button> */}
       <p>
-        IČ: <TextPrimary>07933215</TextPrimary> <br />
-        Číslo účtu: <TextPrimary>2501498897 / 2010 (Fio)</TextPrimary>
+        IČ: <CopyToClipboard text="07933215"><TextPrimary>07933215</TextPrimary></CopyToClipboard> <br />
+        Číslo účtu: <CopyToClipboard text="2501498897/2020"><TextPrimary>2501498897 / 2010 (Fio)</TextPrimary></CopyToClipboard>
         <br />
       </p>
     </Container>
